@@ -4,30 +4,30 @@ loaderVersion = "[35,)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "examplemod"
+modId = "jarm_3"
 version = "${version}"
 displayName = "Example Mod"
 authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
-#logoFile = ""
+logoFile = "assets/jarm_3"
 
-[[dependencies.examplemod]]
+[[dependencies.jarm_3]]
 modId = "forge"
 mandatory = true
 versionRange = "[35,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.jarm_3]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.16.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.jarm_3]]
 modId = "architectury"
 mandatory = true
 versionRange = "[1.1.55,)"

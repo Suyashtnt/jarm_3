@@ -1,4 +1,4 @@
-package net.examplemod;
+package com.tnt_man_inc.jarm_3;
 
 import me.shedaniel.architectury.annotations.ExpectPlatform;
 import me.shedaniel.architectury.platform.Platform;

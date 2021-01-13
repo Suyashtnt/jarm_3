@@ -1,6 +1,6 @@
-package net.examplemod.fabric;
+package com.tnt_man_inc.jarm_3.fabric;
 
-import net.examplemod.ExampleExpectPlatform;
+import com.tnt_man_inc.jarm_3.ExampleExpectPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.File;

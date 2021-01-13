@@ -1,6 +1,6 @@
-package net.examplemod.fabric;
+package com.tnt_man_inc.jarm_3.fabric;
 
-import net.examplemod.ExampleMod;
+import com.tnt_man_inc.jarm_3.ExampleMod;
 import net.fabricmc.api.ModInitializer;
 
 public class ExampleModFabric implements ModInitializer {

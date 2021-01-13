@@ -1,6 +1,6 @@
-package net.examplemod.forge;
+package com.tnt_man_inc.jarm_3.forge;
 
-import net.examplemod.ExampleExpectPlatform;
+import com.tnt_man_inc.jarm_3.ExampleExpectPlatform;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.io.File;
