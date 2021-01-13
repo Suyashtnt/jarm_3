@@ -14,11 +14,11 @@ import java.util.function.Supplier;
 import static com.tnt_man_inc.jarm_3.Registries.ITEMS;
 import static com.tnt_man_inc.jarm_3.Registries.MOD_ID;
 
-public class ExampleMod {
+public class Jarm {
     // We can use this if we don't want to use DeferredRegister
     public static final LazyLoadedValue<Registries> REGISTRIES = new LazyLoadedValue<>(() -> Registries.get(MOD_ID));
     // Registering a new creative tab
-    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabs.create(new ResourceLocation(MOD_ID, "jarm_tab"), new Supplier<ItemStack>() {
+    public static final CreativeModeTab JARM_TAB = CreativeTabs.create(new ResourceLocation(MOD_ID, "general"), new Supplier<ItemStack>() {
         @Override
         public ItemStack get() {
             return new ItemStack(Ruby.RUBY_ITEM.get());

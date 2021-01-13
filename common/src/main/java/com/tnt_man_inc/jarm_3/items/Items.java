@@ -4,6 +4,7 @@ import me.shedaniel.architectury.registry.RegistrySupplier;
 import net.minecraft.world.item.Item;
 
 public class Items {
-    RegistrySupplier<Item> ruby = Ruby.RUBY_ITEM;
-    public static void init() {}
+    public static void init() {
+        Ruby.init();
+    }
 }

@@ -6,12 +6,12 @@ license = "Insert License Here"
 [[mods]]
 modId = "jarm_3"
 version = "${version}"
-displayName = "Example Mod"
+displayName = "JARM 3.0"
 authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
-logoFile = "assets/jarm_3"
+logoFile = "assets/jarm_3/logo.png"
 
 [[dependencies.jarm_3]]
 modId = "forge"
