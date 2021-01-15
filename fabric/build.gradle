@@ -1,6 +1,10 @@
+import com.modrinth.minotaur.TaskModrinthUpload
+
 plugins {
     id "com.github.johnrengelman.shadow" version "5.0.0"
 }
+
+Map<String, String> ENV = System.getenv()
 
 configurations {
     shadow
@@ -46,3 +50,31 @@ remapJar {
     input.set(shadowJar.archivePath)
     archiveClassifier = "fabric"
 }
+
+publishing {
+    publications {
+        mavenFabric(MavenPublication) {
+            artifact(remapJar.archivePath) {
+                builtBy build
+                classifier "fabric"
+            }
+        }
+    }
+}
+
+
+task publishModrinth (type: TaskModrinthUpload) {
+    dependsOn("build")
+    token = ENV['MODRINTH_TOKEN']
+    projectId = 'kuED0e2M'
+    versionNumber = rootProject.mod_version+"-fabric"
+    uploadFile = remapJar
+    addGameVersion(rootProject.minecraft_version)
+    addLoader('fabric')
+    changelog = '''
+    That damn TABS dude forgot to update the changelog
+    '''
+    releaseType = "alpha"
+}
+
+rootProject.tasks.getByName("modrinthPublish").dependsOn tasks.getByName("publishModrinth")

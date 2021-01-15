@@ -1,0 +1,36 @@
+{
+  "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+  "display": {
+    "title": {
+      "text": "Stronger Than Diamond",
+      "color": "blue"
+    },
+    "description": {
+      "text": "Make a Strong diamond"
+    },
+    "icon": {
+      "item": "jarm_3:strong_diamond"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "Made one": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jarm_3:strong_diamond",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "adventure:almost_like_diamond"
+}

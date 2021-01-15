@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_block"
+  },
+  "addition": {
+    "item": "jarm_3:ruby_block"
+  },
+  "result": {
+    "item": "jarm_3:strong_diamond"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jarm_3:blocks/ruby_block",
+    "up": "jarm_3:blocks/ruby_block",
+    "north": "jarm_3:blocks/ruby_block",
+    "east": "jarm_3:blocks/ruby_block",
+    "south": "jarm_3:blocks/ruby_block",
+    "west": "jarm_3:blocks/ruby_block",
+    "particle": "jarm_3:blocks/ruby_block"
+  }
+}
