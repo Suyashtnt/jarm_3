@@ -1,11 +1,8 @@
-package com.tnt_man_inc.jarm_3.items;
+package com.tnt_man_inc.jarm_3.items
 
-import com.tnt_man_inc.jarm_3.Jarm;
-import net.minecraft.world.item.Item;
+import com.tnt_man_inc.jarm_3.Jarm
+import com.tnt_man_inc.jarm_3.items.NISGDApple
+import net.minecraft.world.item.Item
+import java.lang.AssertionError
 
-public class BaseItem extends Item {
-    public BaseItem(Properties properties) {
-        // because im too lazy to do it per item
-        super(properties.tab(Jarm.JARM_TAB));
-    }
-}
+open class BaseItem(properties: Properties) : Item(properties.tab(Jarm.JARM_TAB))

@@ -2,6 +2,15 @@ import com.modrinth.minotaur.TaskModrinthUpload
 
 plugins {
     id "com.github.johnrengelman.shadow" version "5.0.0"
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+repositories {
+    maven {
+        name = 'kotlinforforge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+    }
+    mavenCentral()
 }
 
 Map<String, String> ENV = System.getenv()
@@ -20,6 +29,8 @@ dependencies {
     forge("net.minecraftforge:forge:${rootProject.architect.minecraft}-${rootProject.forge_version}")
     // Remove the next line if you don't want to depend on the API
     modCompile("me.shedaniel:architectury:${rootProject.architectury_version}:forge")
+    implementation 'thedarkcolour:kotlinforforge:1.7.0'
+
 
     compileOnly(project(path: ":common")) {
         transitive = false
@@ -30,6 +41,7 @@ dependencies {
     shadow(project(path: ":common", configuration: "transformForge")) {
         transitive = false
     }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 shadowJar {
@@ -72,3 +84,13 @@ task publishModrinth (type: TaskModrinthUpload) {
 }
 
 rootProject.tasks.getByName("modrinthPublish").dependsOn tasks.getByName("publishModrinth")
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}

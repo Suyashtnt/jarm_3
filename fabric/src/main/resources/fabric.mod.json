@@ -16,14 +16,18 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.tnt_man_inc.jarm_3.fabric.ExampleModFabric"
+      {
+        "value": "com.tnt_man_inc.jarm_3.fabric.JarmFabric",
+        "adapter": "kotlin"
+      }
     ]
   },
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": ">=1.16.4",
-    "architectury": ">=1.1.55"
+    "architectury": ">=1.1.55",
+    "fabric-language-kotlin": ">=1.4.21"
   },
   "suggests": {
     "flamingo": "*"

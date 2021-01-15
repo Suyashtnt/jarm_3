@@ -1,12 +1,9 @@
-package com.tnt_man_inc.jarm_3.blocks;
+package com.tnt_man_inc.jarm_3.blocks
 
+import com.tnt_man_inc.jarm_3.Jarm
+import com.tnt_man_inc.jarm_3.items.NISGDApple
+import net.minecraft.world.item.BlockItem
+import net.minecraft.world.level.block.Block
+import java.lang.AssertionError
 
-import com.tnt_man_inc.jarm_3.Jarm;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
-
-public class BaseBlockItem extends BlockItem {
-    public BaseBlockItem(Block block, Properties properties) {
-        super(block, properties.tab(Jarm.JARM_TAB));
-    }
-}
+class BaseBlockItem(block: Block?, properties: Properties) : BlockItem(block, properties.tab(Jarm.JARM_TAB))

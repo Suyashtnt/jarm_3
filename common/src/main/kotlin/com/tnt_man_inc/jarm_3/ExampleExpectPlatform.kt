@@ -1,25 +1,29 @@
-package com.tnt_man_inc.jarm_3;
+package com.tnt_man_inc.jarm_3
 
-import me.shedaniel.architectury.annotations.ExpectPlatform;
-import me.shedaniel.architectury.platform.Platform;
+import com.tnt_man_inc.jarm_3.items.NISGDApple
+import me.shedaniel.architectury.ExpectPlatform
+import java.io.File
+import java.lang.AssertionError
 
-import java.io.File;
-
-public class ExampleExpectPlatform {
+object ExampleExpectPlatform {// Just throw an error, the content should get replaced at runtime.
     /**
-     * We can use {@link Platform#getConfigFolder()} but this is just an example of {@link ExpectPlatform}.
-     * <p>
+     * We can use [Platform.getConfigFolder] but this is just an example of [ExpectPlatform].
+     *
+     *
      * This must be a public static method. The platform-implemented solution must be placed under a
-     * platform sub-package, with its class suffixed with {@code Impl}.
-     * <p>
+     * platform sub-package, with its class suffixed with `Impl`.
+     *
+     *
      * Example:
      * Expect: net.examplemod.ExampleExpectPlatform#getConfigDirectory()
      * Actual Fabric: net.examplemod.fabric.ExampleExpectPlatformImpl#getConfigDirectory()
      * Actual Forge: net.examplemod.forge.ExampleExpectPlatformImpl#getConfigDirectory()
      */
-    @ExpectPlatform
-    public static File getConfigDirectory() {
-        // Just throw an error, the content should get replaced at runtime.
-        throw new AssertionError();
-    }
+    @JvmStatic
+    @get:ExpectPlatform
+    val configDirectory: File
+        get() {
+            // Just throw an error, the content should get replaced at runtime.
+            throw AssertionError()
+        }
 }

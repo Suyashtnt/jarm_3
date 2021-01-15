@@ -1,7 +1,10 @@
-package com.tnt_man_inc.jarm_3.blocks;
+package com.tnt_man_inc.jarm_3.blocks
 
-public class BlockInitializer {
-    public static void init() {
-        RubyBlock.init();
+import com.tnt_man_inc.jarm_3.items.NISGDApple
+import java.lang.AssertionError
+
+object BlockInitializer {
+    fun init() {
+        RubyBlock.init()
     }
 }
