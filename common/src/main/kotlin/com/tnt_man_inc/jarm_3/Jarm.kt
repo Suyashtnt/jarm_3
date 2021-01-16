@@ -13,6 +13,7 @@ import java.lang.AssertionError
 object Jarm {
     val REGISTRIES = LazyLoadedValue { me.shedaniel.architectury.registry.Registries.get(Registries.MOD_ID) }
     val JARM_TAB = CreativeTabs.create(ResourceLocation(Registries.MOD_ID, "general")) { ItemStack(Ruby.RUBY_ITEM.get()) }
+
     @JvmStatic
     fun init() {
         BlockInitializer.init()

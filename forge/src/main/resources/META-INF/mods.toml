@@ -1,4 +1,4 @@
-modLoader = "javafml"
+modLoader="kotlinforforge"
 loaderVersion = "[1,)"
 #issueTrackerURL = ""
 license = "Insert License Here"
@@ -11,7 +11,8 @@ authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
-logoFile = "assets/jarm_3/logo.png"
+#for some reason breaks mod
+#logoFile = "assets/jarm_3/logo.png"
 
 [[dependencies.jarm_3]]
 modId = "forge"

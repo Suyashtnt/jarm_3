@@ -29,8 +29,7 @@ dependencies {
     forge("net.minecraftforge:forge:${rootProject.architect.minecraft}-${rootProject.forge_version}")
     // Remove the next line if you don't want to depend on the API
     modCompile("me.shedaniel:architectury:${rootProject.architectury_version}:forge")
-    implementation 'thedarkcolour:kotlinforforge:1.7.0'
-
+    implementation "thedarkcolour:kotlinforforge:1.7.0"
 
     compileOnly(project(path: ":common")) {
         transitive = false
